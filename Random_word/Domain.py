@@ -5,6 +5,7 @@ class Word():
         self.word_class = rw.RandomWords()
         self.word_to_play = self.word_class.get_random_word()
         self.display_positions  = [0] * len(self.word_to_play)
+        self.mistakes = 0
         self.initial_instance()
 
         """
